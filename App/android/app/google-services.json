@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "2788170684",
+    "project_id": "selfiemtrx-0",
+    "storage_bucket": "selfiemtrx-0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2788170684:android:284814c07bc756a65de9b9",
+        "android_client_info": {
+          "package_name": "com.example.selfie_metrics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "2788170684-60mlhuqt949pr50oa6c69jkc16b5tk61.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmu76nSCcdRQ4RT4AdsggiYqr1p5brdrg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "2788170684-60mlhuqt949pr50oa6c69jkc16b5tk61.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "2788170684-7k6nlfertml6t2050bo1rp94uuvpal61.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.selfiemtrx"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

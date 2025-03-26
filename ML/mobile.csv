@@ -1,0 +1,31 @@
+PHONE,FOCAL_LENGTH_PIXEL,MIN_DEPTH,MAX_DEPTH,MAIN_MODEL
+Samsung Galaxy S25 Ultra,1550,0.2,1.5,Samsung
+Samsung Galaxy Z Flip6,1500,0.25,1.4,Samsung
+Samsung Galaxy A55 5G,1450,0.3,1.5,Samsung
+Samsung Galaxy S24 FE,1500,0.25,1.6,Samsung
+Samsung Galaxy M33,1400,0.3,1.4,Samsung
+Apple iPhone 16 Pro Max,1550,0.2,1.5,Apple
+Apple iPhone 15 Pro,1520,0.25,1.5,Apple
+Apple iPhone 14 Pro Max,1520,0.2,1.5,Apple
+Apple iPhone SE (3rd generation),1400,0.3,1.4,Apple
+Apple iPhone 12 Pro,1500,0.25,1.5,Apple
+Xiaomi 14 Pro,1550,0.2,1.5,Xiaomi
+Xiaomi Redmi Note 14 Pro+,1450,0.3,1.5,Xiaomi
+Xiaomi 13 Lite,1480,0.25,1.4,Xiaomi
+Xiaomi Redmi Note 14,1400,0.3,1.4,Xiaomi
+Xiaomi 12T Pro,1500,0.25,1.5,Xiaomi
+OPPO Reno 8 Pro,1550,0.2,1.5,OPPO
+OPPO Find X5,1500,0.25,1.5,OPPO
+OPPO A54 5G,1450,0.3,1.4,OPPO
+OPPO F21 Pro,1480,0.25,1.4,OPPO
+OPPO K10,1450,0.3,1.4,OPPO
+Vivo X80 Pro,1550,0.2,1.5,Vivo
+Vivo Y75 5G,1400,0.3,1.4,Vivo
+Vivo V23 Pro,1500,0.25,1.5,Vivo
+Vivo T2 Pro,1450,0.3,1.4,Vivo
+Vivo Z20 SE,1450,0.3,1.4,Vivo
+OnePlus 11 Pro,1550,0.2,1.5,OnePlus
+OnePlus 9R,1500,0.25,1.5,OnePlus
+OnePlus Nord 2,1450,0.3,1.4,OnePlus
+OnePlus 8T,1500,0.25,1.5,OnePlus
+OnePlus 7 Pro,1400,0.3,1.4,OnePlus
