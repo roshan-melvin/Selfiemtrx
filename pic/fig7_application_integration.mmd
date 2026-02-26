@@ -1,0 +1,17 @@
+flowchart TD
+    User["User Device"]
+    App["Mobile/Web App"]
+    Server["Backend Server (Biometric Analysis)"]
+    Health["Health Monitoring Service"]
+    Identity["Identity Verification System"]
+    IoT["IoT Devices (Smart Home, Wearables)"]
+    Results["Biometric Results & Feedback"]
+
+    User -- "Image/Data" --> App
+    App -- "API Call" --> Server
+    Server -- "Analysis Results" --> Results
+    Results -- "Display" --> App
+    App -- "Feedback" --> User
+    Results -- "Sync Data" --> Health
+    Results -- "Authenticate" --> Identity
+    Results -- "Control/Trigger" --> IoT

@@ -1,0 +1,39 @@
+flowchart TD
+    Input["Input Image"]
+    Preprocess["Preprocessing (Resize, Normalize, Enhance)"]
+    DeepFace["DeepFace\n(Age, Gender, Emotion, Race)"]
+    YOLO["YOLO\n(Object Detection)"]
+    MiDaS["MiDaS\n(Depth Estimation)"]
+    MTCNN["MTCNN\n(Facial Landmarks)"]
+    Age["Age"]
+    Gender["Gender"]
+    Emotion["Emotion"]
+    Race["Race"]
+    Objects["Detected Objects"]
+    Depth["Depth Map"]
+    Landmarks["Facial Landmarks"]
+    Fusion["Feature Fusion & Analysis\n(Height, Metrics Calculation)"]
+    Output["Biometric Results & Feedback"]
+    Feedback["Feedback to User (App/Web)"]
+
+    Input --> Preprocess
+    Preprocess --> DeepFace
+    Preprocess --> YOLO
+    Preprocess --> MiDaS
+    Preprocess --> MTCNN
+    DeepFace --> Age
+    DeepFace --> Gender
+    DeepFace --> Emotion
+    DeepFace --> Race
+    YOLO --> Objects
+    MiDaS --> Depth
+    MTCNN --> Landmarks
+    Age --> Fusion
+    Gender --> Fusion
+    Emotion --> Fusion
+    Race --> Fusion
+    Objects --> Fusion
+    Depth --> Fusion
+    Landmarks --> Fusion
+    Fusion --> Output
+    Output --> Feedback

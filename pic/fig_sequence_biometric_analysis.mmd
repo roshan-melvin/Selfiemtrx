@@ -1,0 +1,16 @@
+sequenceDiagram
+    participant User as User
+    participant App as Mobile/Web App
+    participant Server as Backend Server
+    participant ML as ML Models
+    participant Ext as External Services
+
+    User->>+App: Capture/Upload Image
+    App->>+Server: Send Image (HTTPS, AES-256)
+    Server->>+ML: Analyze Image (Face, Object, Depth, Landmarks)
+    ML-->>-Server: Biometric Features
+    Server->>Server: Temporary Storage & Immediate Deletion
+    Server-->>-App: Analysis Results
+    App-->>-User: Display Results & Feedback
+    Server->>+Ext: Sync/Authenticate/Control (Health, Identity, IoT)
+    Ext-->>-Server: Acknowledge/Response

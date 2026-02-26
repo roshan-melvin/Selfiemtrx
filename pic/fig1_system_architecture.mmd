@@ -1,0 +1,22 @@
+graph TD
+    User[User captures selfie/image]
+    App[Mobile/Web App]
+    Server[Backend Server]
+    Face[Face Analysis]
+    Object[Object Detection]
+    Depth[Depth Estimation]
+    Landmarks[Facial Landmark Detection]
+    Results[Results & Feedback]
+
+    User --> App
+    App --> Server
+    Server --> Face
+    Server --> Object
+    Server --> Depth
+    Server --> Landmarks
+    Face --> Results
+    Object --> Results
+    Depth --> Results
+    Landmarks --> Results
+    Results --> App
+    App --> User

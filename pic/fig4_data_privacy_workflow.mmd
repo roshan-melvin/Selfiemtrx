@@ -1,0 +1,22 @@
+flowchart TD
+    User["User Device"]
+    App["Mobile/Web App"]
+    Encrypt["AES-256 Encryption"]
+    HTTPS["Secure Transmission (HTTPS)"]
+    Server["Backend Server"]
+    Temp["Temporary Storage (RAM/Temp File)"]
+    Analysis["Image Analysis (ML Models)"]
+    Delete["Immediate Deletion"]
+    Results["Results & Feedback"]
+
+    User -- "Image Capture" --> App
+    App -- "Encrypt Image" --> Encrypt
+    Encrypt -- "Encrypted Data" --> HTTPS
+    HTTPS -- "Secure Data" --> Server
+    Server -- "Store Temporarily" --> Temp
+    Temp -- "Process Image" --> Analysis
+    Analysis -- "Delete After Analysis" --> Delete
+    Delete -- "No Persistent Storage" --> Server
+    Analysis -- "Send Results" --> Results
+    Results -- "Feedback" --> App
+    App -- "Display Results" --> User

@@ -14,7 +14,7 @@ Fig. 1: System Architecture Diagram
 Illustration of the overall system showing the user capturing a selfie/image, the flow to the mobile/web app, backend server, and integrated ML models (face analysis, object detection, depth estimation, etc.).
 
 Fig. 2: User Interface Screens
-Screenshots or mockups of the mobile/web app interface for image capture, result visualization, and feedback display.
+Screenshots or mockups of the mobile/web app interface for image capture, result visualization, and feedback display.(need to)
 
 Fig. 3: ML Model Integration Flow
 Block diagram showing how different ML models (DeepFace, YOLO, MiDaS, MTCNN) are orchestrated in the unified processing pipeline.
@@ -23,10 +23,10 @@ Fig. 4: Data Privacy Workflow
 Diagram illustrating temporary image processing, immediate deletion, and secure communication between client and server.
 
 Fig. 5: Example Output Visualization
-Sample output image with detected face, bounding boxes, and annotated biometric metrics (height, age, gender, etc.).
+Sample output image with detected face, bounding boxes, and annotated biometric metrics (height, age, gender, etc.).(need to)
 
 Fig. 6: Error and Feedback Handling
-Screens or flowchart showing how the system provides corrective feedback for low-quality images or failed analyses.
+Screens or flowchart showing how the system provides corrective feedback for low-quality images or failed analyses.(need to)
 
 Fig. 7: Application Integration
 Diagram showing integration with external services (health monitoring, identity verification, IoT devices).

@@ -1,0 +1,27 @@
+graph TD
+    User([User<br/>📱])
+    App([Mobile/Web App<br/>🖥️📱])
+    Server([Backend Server<br/>☁️])
+    Face([Face Analysis<br/>🤖])
+    Object([Object Detection<br/>🧠])
+    Depth([Depth Estimation<br/>📏])
+    Landmarks([Facial Landmark Detection<br/>🔍])
+    Temp[Temporary Storage<br/>🗑️]
+    Lock[Secure Transmission<br/>🔒]
+    Results([Results & Feedback<br/>📊])
+
+    User -- "Image Upload" --> App
+    App -- "API Call (HTTPS)" --> Lock
+    Lock -- "Secure Data" --> Server
+    Server -- "Process Image" --> Temp
+    Temp -- "Delete After Analysis" --> Server
+    Server --> Face
+    Server --> Object
+    Server --> Depth
+    Server --> Landmarks
+    Face --> Results
+    Object --> Results
+    Depth --> Results
+    Landmarks --> Results
+    Results -- "Analysis Results" --> App
+    App -- "Feedback/Visualization" --> User
