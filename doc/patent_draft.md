@@ -52,29 +52,29 @@ The invention described relates to the field of computer vision, machine learnin
 The following formulas and algorithms are central to the operation and novelty of the invention:
 
 1. **Head-to-Body Ratio Formula**
-   - Used to estimate total height:
-   $$
-   \text{Corrected Estimated Height} = \frac{\text{Estimated Head Height}}{\text{Head-to-Body Ratio}}
-   $$
+    - Used to estimate total height:
+    $$
+    	ext{Estimated Total Height} = \text{Estimated Head Height} \times \text{Head-to-Body Ratio}
+    $$
 
 2. **Height Calculation Using Depth and Focal Length**
-   - Converts pixel head height to real-world height:
-   $$
-   \text{Head Height (cm)} = \frac{\text{Pixel Head Height} \times \text{Depth}}{\text{Focal Length (pixels)}} \times 100
-   $$
+    - Converts pixel head height to real-world height:
+    $$
+    	ext{Head Height (cm)} = \frac{\text{Pixel Head Height} \times \text{Depth (m)}}{\text{Focal Length (pixels)}} \times 100
+    $$
 
 3. **Reference Object-Based Height Estimation**
-   - Uses known object height for scaling:
-   $$
-   \text{Head Height (cm)} = \text{Pixel Head Height} \times \left(\frac{\text{Reference Object Real Height}}{\text{Reference Object Height (pixels)}}\right) \times \left(\frac{\text{Depth Head}}{\text{Depth Reference}}\right) \times 100
-   $$
+    - Uses known object height for scaling:
+    $$
+    	ext{Head Height (cm)} = \text{Pixel Head Height} \times \left(\frac{\text{Reference Object Real Height (cm)}}{\text{Reference Object Height (pixels)}}\right) \times \left(\frac{\text{Depth Head}}{\text{Depth Reference}}\right)
+    $$
 
 4. **Object Detection and Height Estimation**
-   - Object height in pixels:
-   $$
-   \text{Object Height (pixels)} = y_2 - y_1
-   $$
-   Where $y_2$ is the lower (bottom) y-coordinate and $y_1$ is the upper (top) y-coordinate of the object's bounding box in the image.
+    - Object height in pixels:
+    $$
+    	ext{Object Height (pixels)} = y_2 - y_1
+    $$
+    Where $y_2$ is the lower (bottom) y-coordinate and $y_1$ is the upper (top) y-coordinate of the object's bounding box in the image.
 
 5. **ML Methods Used**
    - DeepFace (age, gender, emotion, race analysis)
