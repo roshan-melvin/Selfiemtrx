@@ -23,10 +23,48 @@ Fig. 4: Data Privacy Workflow
 Diagram illustrating temporary image processing, immediate deletion, and secure communication between client and server.
 
 Fig. 5: Example Output Visualization
-Sample output image with detected face, bounding boxes, and annotated biometric metrics (height, age, gender, etc.).(need to)
+Sample output image with detected face, bounding boxes, and annotated biometric metrics (height, age, gender, etc.).
 
 Fig. 6: Error and Feedback Handling
 Screens or flowchart showing how the system provides corrective feedback for low-quality images or failed analyses.(need to)
 
 Fig. 7: Application Integration
 Diagram showing integration with external services (health monitoring, identity verification, IoT devices).
+
+## Key Algorithms and Formulas Used
+
+The following formulas and algorithms are central to the operation and novelty of the system:
+
+1. **Head-to-Body Ratio Formula**
+   - Used to estimate total height:
+   $$
+   \text{Corrected Estimated Height} = \frac{\text{Estimated Head Height}}{\text{Head-to-Body Ratio}}
+   $$
+
+2. **Height Calculation Using Depth and Focal Length**
+   - Converts pixel head height to real-world height:
+   $$
+   \text{Head Height (cm)} = \frac{\text{Pixel Head Height} \times \text{Depth}}{\text{Focal Length (pixels)}} \times 100
+   $$
+
+3. **Reference Object-Based Height Estimation**
+   - Uses known object height for scaling:
+   $$
+   \text{Head Height (cm)} = \text{Pixel Head Height} \times \left(\frac{\text{Reference Object Real Height}}{\text{Reference Object Height (pixels)}}\right) \times \left(\frac{\text{Depth Head}}{\text{Depth Reference}}\right) \times 100
+   $$
+
+4. **Object Detection and Height Estimation**
+   - Object height in pixels:
+   $$
+   \text{Object Height (pixels)} = y_2 - y_1
+   $$
+   Where $y_2$ is the lower (bottom) y-coordinate and $y_1$ is the upper (top) y-coordinate of the object's bounding box in the image.
+
+5. **ML Methods Used**
+   - DeepFace (age, gender, emotion, race analysis)
+   - Detectron2 (object detection)
+   - YOLOv8 (object detection)
+   - MiDaS (depth estimation)
+   - MTCNN (face landmarks)
+
+These formulas and algorithms are implemented in the unified processing pipeline and are essential for the system’s biometric analysis capabilities.

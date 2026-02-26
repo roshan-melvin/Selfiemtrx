@@ -47,6 +47,44 @@ The invention described relates to the field of computer vision, machine learnin
 
 [014] The invention is novel because it combines real-time multi-feature extraction, privacy-centric processing, and seamless integration of multiple ML models, enabling users to obtain actionable biometric insights instantly. It is suitable for health monitoring, fitness tracking, identity verification, assistive technology, gaming, smart home, and educational applications, representing a significant technical advancement over prior art.
 
+### Key Algorithms and Formulas Used
+
+The following formulas and algorithms are central to the operation and novelty of the invention:
+
+1. **Head-to-Body Ratio Formula**
+   - Used to estimate total height:
+   $$
+   \text{Corrected Estimated Height} = \frac{\text{Estimated Head Height}}{\text{Head-to-Body Ratio}}
+   $$
+
+2. **Height Calculation Using Depth and Focal Length**
+   - Converts pixel head height to real-world height:
+   $$
+   \text{Head Height (cm)} = \frac{\text{Pixel Head Height} \times \text{Depth}}{\text{Focal Length (pixels)}} \times 100
+   $$
+
+3. **Reference Object-Based Height Estimation**
+   - Uses known object height for scaling:
+   $$
+   \text{Head Height (cm)} = \text{Pixel Head Height} \times \left(\frac{\text{Reference Object Real Height}}{\text{Reference Object Height (pixels)}}\right) \times \left(\frac{\text{Depth Head}}{\text{Depth Reference}}\right) \times 100
+   $$
+
+4. **Object Detection and Height Estimation**
+   - Object height in pixels:
+   $$
+   \text{Object Height (pixels)} = y_2 - y_1
+   $$
+   Where $y_2$ is the lower (bottom) y-coordinate and $y_1$ is the upper (top) y-coordinate of the object's bounding box in the image.
+
+5. **ML Methods Used**
+   - DeepFace (age, gender, emotion, race analysis)
+   - Detectron2 (object detection)
+   - YOLOv8 (object detection)
+   - MiDaS (depth estimation)
+   - MTCNN (face landmarks)
+
+These formulas and algorithms are implemented in the unified processing pipeline and are essential for the system’s biometric analysis capabilities.
+
 1. Components of the Proposed System
 
 a. Image Acquisition and Preprocessing Subsystem:
