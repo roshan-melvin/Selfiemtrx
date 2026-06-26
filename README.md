@@ -152,7 +152,7 @@ For the full derivations and explanations, see [doc/formulas_methods.md](doc/for
 
 | Preview | Preview | Preview |
 | --- | --- | --- |
-| ![Mobile screenshot 1](App/flutter_01.png) | ![Mobile screenshot 2](App/flutter_02.png) | ![Mobile screenshot 3](App/flutter_03.png) |
+| ![Mobile screenshot 1](App/flutter_03.png) | ![Mobile screenshot 2](pic/out%20image.jpeg) | ![Mobile screenshot 3](pic/overall.png) |
 
 ### Project Visuals
 
